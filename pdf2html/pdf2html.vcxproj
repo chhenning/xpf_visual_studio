@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\xpdf\xpdf\AcroForm.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\Annot.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\Array.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\BuiltinFont.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\BuiltinFontTables.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\Catalog.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\CharCodeToUnicode.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\CMap.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\CoreOutputDev.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\Decrypt.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\Dict.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\Error.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\FontEncodingTables.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\Form.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\Function.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\Gfx.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\GfxFont.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\GfxState.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\GlobalParams.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\HTMLGen.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\ImageOutputDev.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\JArithmeticDecoder.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\JBIG2Stream.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\JPXStream.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\Lexer.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\Link.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\NameToCharCode.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\Object.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\OptionalContent.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\Outline.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\OutputDev.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\Page.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\Parser.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\PDFCore.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\PDFDoc.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\PDFDocEncoding.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\pdftohtml.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\PreScanOutputDev.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\PSOutputDev.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\PSTokenizer.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\SecurityHandler.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\SplashOutputDev.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\Stream.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\TextOutputDev.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\TextString.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\UnicodeMap.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\UnicodeTypeTable.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\XFAForm.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\XpdfPluginAPI.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\XRef.cc" />
+    <ClCompile Include="..\..\xpdf\xpdf\Zoox.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\fofi\fofi.vcxproj">
+      <Project>{43d8a817-7063-4170-bf30-d55fa02d43a8}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\goo\goo.vcxproj">
+      <Project>{dfed6a20-b041-4edd-9d75-182b216494d7}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\splash\splash.vcxproj">
+      <Project>{bf1dc012-a4bd-43da-ade5-0b23c27194b7}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E002DD45-3269-40FD-9657-416A5D685829}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>pdf2html</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\pdf\xpdf;D:\pdf\xpdf\goo;D:\pdf\xpdf\fofi;D:\pdf\xpdf\splash;D:\vcpkg\installed\x64-windows\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\vcpkg\installed\x64-windows\debug\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freetyped.lib;libpng16d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
